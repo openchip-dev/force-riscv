@@ -1,0 +1,14 @@
+#export FORCE_CC=/usr/bin/g++
+#export FORCE_PYTHON_VER=3.12
+#export FORCE_PYTHON_LIB=/opt/anaconda3/lib
+#export FORCE_PYTHON_INC=/opt/anaconda3/include/python3.12
+#export PATH=/opt/anaconda3/bin:$PATH
+#export LD_LIBRARY_PATH=/opt/anaconda3/lib:$LD_LIBRARY_PATH
+export FORCE_CC=/usr/local/gcc-6.2.0/bin/g++-6.2.0
+export FORCE_PYTHON_VER=3.8
+export FORCE_PYTHON_LIB=/home/zhaoxuying/.conda/envs/python38/lib
+export FORCE_PYTHON_INC=/home/zhaoxuying/.conda/envs/python38/include/python3.8
+export PATH=/home/zhaoxuying/.conda/envs/python38/bin:$PATH
+export PATH=/usr/local/gcc-6.2.0/bin:$PATH
+export LD_LIBRARY_PATH=/home/zhaoxuying/.conda/envs/python38/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/gcc-6.2.0/lib:$LD_LIBRARY_PATH

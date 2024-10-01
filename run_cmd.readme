@@ -1,0 +1,20 @@
+source force-riscv.bash
+source setenv.bash
+1, compile bin/friscv, bin/SimApiHANDCAR.so
+(use g++-6.2.0)
+cd force-riscv
+make clean
+make
+ls -la bin
+ls -la fpix/bin
+
+2, generate handcar_cosim.so
+cd force-riscv/handcar
+make clean
+./regenerate_and_build.bash -n
+ls -la build/bin
+
+3, generate elf file
+bin/friscv -t examples/riscv/basic_fpu_force.py -c config/riscv_rv64_sv39.config -s 0x12345678 -w -l info -o handlers_set=Comprehensive
+*.elf
+*.S
